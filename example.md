@@ -38,22 +38,22 @@ Entity Info:
 Priority: 2
 Video input : 0 (Camera 1: ok)
 Format Video Capture:
-	Width/Height      : 1920/1080
-	Pixel Format      : 'MJPG' (Motion-JPEG)
+	Width/Height      : 640/480
+	Pixel Format      : 'YUYV' (YUYV 4:2:2)
 	Field             : None
-	Bytes per Line    : 0
-	Size Image        : 4147200
+	Bytes per Line    : 1280
+	Size Image        : 614400
 	Colorspace        : sRGB
 	Transfer Function : Rec. 709
 	YCbCr/HSV Encoding: ITU-R 601
-	Quantization      : Default (maps to Full Range)
+	Quantization      : Default (maps to Limited Range)
 	Flags             : 
 Crop Capability Video Capture:
-	Bounds      : Left 0, Top 0, Width 1920, Height 1080
-	Default     : Left 0, Top 0, Width 1920, Height 1080
+	Bounds      : Left 0, Top 0, Width 640, Height 480
+	Default     : Left 0, Top 0, Width 640, Height 480
 	Pixel Aspect: 1/1
-Selection Video Capture: crop_default, Left 0, Top 0, Width 1920, Height 1080, Flags: 
-Selection Video Capture: crop_bounds, Left 0, Top 0, Width 1920, Height 1080, Flags: 
+Selection Video Capture: crop_default, Left 0, Top 0, Width 640, Height 480, Flags: 
+Selection Video Capture: crop_bounds, Left 0, Top 0, Width 640, Height 480, Flags: 
 Streaming Parameters Video Capture:
 	Capabilities     : timeperframe
 	Frames per second: 30.000 (30/1)
@@ -135,7 +135,6 @@ ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg develop
   libswresample   3.  9.100 /  3.  9.100
   libpostproc    55.  9.100 / 55.  9.100
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
-[video4linux2,v4l2 @ 0x77dac4000cc0] The V4L2 driver changed the video from 1920x1080 to 640x480
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
@@ -147,7 +146,7 @@ ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg develop
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
 Input #0, video4linux2,v4l2, from '/dev/video0':
-  Duration: N/A, start: 53632.779439, bitrate: 147456 kb/s
+  Duration: N/A, start: 56714.361290, bitrate: 147456 kb/s
   Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
 Failed to open file '/dev/video0' or configure filtergraph
 
@@ -216,7 +215,7 @@ ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg develop
   libswresample   3.  9.100 /  3.  9.100
   libpostproc    55.  9.100 / 55.  9.100
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
-[video4linux2,v4l2 @ 0x71c4cc000cc0] ioctl(VIDIOC_G_INPUT): Inappropriate ioctl for device
+[video4linux2,v4l2 @ 0x7aef98000cc0] ioctl(VIDIOC_G_INPUT): Inappropriate ioctl for device
 /dev/video1: Inappropriate ioctl for device
 
 ```
@@ -320,7 +319,7 @@ ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg develop
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
 Input #0, video4linux2,v4l2, from '/dev/video2':
-  Duration: N/A, start: 53633.350959, bitrate: 55488 kb/s
+  Duration: N/A, start: 56714.902781, bitrate: 55488 kb/s
   Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 340x340, 55488 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc
 Failed to open file '/dev/video2' or configure filtergraph
 
@@ -389,7 +388,7 @@ ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg develop
   libswresample   3.  9.100 /  3.  9.100
   libpostproc    55.  9.100 / 55.  9.100
     nan    :  0.000 fd=   0 aq=    0KB vq=    0KB sq=    0B f=0/0   
-[video4linux2,v4l2 @ 0x7ea568000cc0] ioctl(VIDIOC_G_INPUT): Inappropriate ioctl for device
+[video4linux2,v4l2 @ 0x7d80b4000cc0] ioctl(VIDIOC_G_INPUT): Inappropriate ioctl for device
 /dev/video3: Inappropriate ioctl for device
 
 ```
