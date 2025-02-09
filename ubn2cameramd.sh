@@ -1,4 +1,5 @@
 #!/bin/bash
+# ubn2cameramd (c) 2025 drAIML BANKON license
 
 # Output file
 OUTPUT_FILE="video_devices_info.md"
