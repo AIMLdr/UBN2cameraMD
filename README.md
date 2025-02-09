@@ -34,10 +34,10 @@ sudo apt install v4l-utils ffmpeg
  
   After execution, the script generates a video_devices_info.md file containing:
 
-Device Sections: Each detected device (/dev/video0 to /dev/video3) has its own section
-Detailed Information: Comprehensive details about the device configuration and capabilities
-Supported Formats: Lists all supported video formats and resolutions
-Testing Results: Captures the terminal output from attempting to run ffplay on the device
+Device Sections: Each detected device (/dev/video0 to /dev/video3) has its own section<br />
+Detailed Information: Comprehensive details about the device configuration and capabilities<br />
+Supported Formats: Lists all supported video formats and resolutions<br />
+Testing Results: Captures the terminal output from attempting to run ffplay on the device<br />
 
 ```bash
 chmod +x ubn2cameramd.sh
