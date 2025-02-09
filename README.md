@@ -38,6 +38,7 @@ Device Sections: Each detected device (/dev/video0 to /dev/video3) has its own s
 Detailed Information: Comprehensive details about the device configuration and capabilities<br />
 Supported Formats: Lists all supported video formats and resolutions<br />
 Testing Results: Captures the terminal output from attempting to run ffplay on the device<br />
+see <a href="https://github.com/AIMLdr/UBN2cameraMD/blob/main/example.md">example.md</a>
 
 ```bash
 chmod +x ubn2cameramd.sh
