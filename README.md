@@ -1,5 +1,5 @@
 # UBN2cameraMD
-bash script diagnostic to test video drivers specific to Ubuntu Linux / debian based OS then output results to <a href="https://github.com/AIMLdr/UBN2cameraMD/blob/main/example.md">video_devices_info.md</a>
+bash script diagnostic to test video drivers specific to Ubuntu Linux / debian based OS outputting results to <a href="https://github.com/AIMLdr/UBN2cameraMD/blob/main/example.md">video_devices_info.md</a>
 
 UBN2cameraMD is a simple yet effective webcam diagnostic tool designed for Ubuntu 22.04 LTS. It scans connected video devices, retrieves detailed information, lists supported formats, and tests each device's functionality. The results are compiled into a Markdown file (`video_devices_info.md`) for easy review and sharing
 
